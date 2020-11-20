@@ -3,9 +3,7 @@ import React from "react";
 function ImagePopup(props) {
   return (
     <section
-      className={`popup popup__image popup__background_image ${
-        props.card ? "popup_open" : ""
-      }`}
+      className={`popup popup_type_image ${props.isOpen ? "popup_open" : ""}`}
     >
       <figure className="popup__container popup__container_image">
         <button
