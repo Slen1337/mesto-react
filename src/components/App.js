@@ -41,6 +41,12 @@ function App() {
     api.changeLikeStatus(card._id, !isLiked).then((newCard) => {
       const newCards = cards.map((c) => (c._id === card._id ? newCard : c));
       setCards(newCards);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+    .finally(() => {
+      setIsLoading(false);
     });
   }
 
@@ -49,6 +55,12 @@ function App() {
       const newCards = cards.filter((c) => c._id !== card._id);
       setCards(newCards);
       closeAllPopups();
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+    .finally(() => {
+      setIsLoading(false);
     });
   }
 

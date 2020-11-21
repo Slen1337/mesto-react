@@ -8,6 +8,7 @@
 **Figma**
 
 * Ссылки на макет в Figma:
+- [https://slen1337.github.io/mesto-react/] deploy проекта на gh-pages
 
 - [https://www.figma.com/file/StZjf8HnoeLdiXS7dYrLAh/JavaScript.-Sprint-4]
 
